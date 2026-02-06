@@ -6,14 +6,9 @@ import heroBg from "@/assets/hero-bg.png";
 export function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image & Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="Neural Network Background" 
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
+      {/* Background Image & Overlay - Reduced opacity to let animation show through */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
       </div>
 
       <div className="container relative z-10 px-4 text-center">
@@ -27,7 +22,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-4"
+            className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-4 backdrop-blur-sm"
           >
             AI Engineering & Data Architecture
           </motion.div>
@@ -49,7 +44,7 @@ export function Hero() {
             <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-lg h-12 px-8">
               View Projects
             </Button>
-            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 text-lg h-12 px-8">
+            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 text-lg h-12 px-8 backdrop-blur-sm">
               Contact Me
             </Button>
           </motion.div>
