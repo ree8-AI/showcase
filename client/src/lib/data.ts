@@ -43,7 +43,6 @@ export const projects: Project[] = [
     description: "Automated supply chain optimization using deep reinforcement learning models.",
     image: automationImg,
     technologies: ["TensorFlow", "Node.js", "Kafka", "Docker"],
-    link: "https://github.com/example/supply-chain",
     longDescription: "An autonomous supply chain management system driven by deep reinforcement learning. The system predicts demand spikes and automatically adjusts inventory orders and logistics routing to minimize costs and delivery times.",
     features: [
       "Deep Reinforcement Learning agents",
@@ -52,7 +51,7 @@ export const projects: Project[] = [
       "Containerized microservices architecture"
     ],
     challenge: "Traditional heuristic models failed to adapt to rapid market shifts during supply shocks.",
-    solution: "Deployed a self-learning agent that continuously trains on new market data, reducing inventory waste by 30% within the first quarter."
+    solution: "Deployed a self-learning agent that continuously trains on new market data, reducing inventory waste by 30% within the first quarter. (Internal tool - Solution Architecture shown above)"
   },
   {
     id: "3",
@@ -79,6 +78,7 @@ export const projects: Project[] = [
     description: "NLP-powered dashboard tracking brand sentiment across social channels in real-time.",
     image: dashboardImg,
     technologies: ["NLP", "React", "Recharts", "FastAPI"],
+    link: "https://example.com/sentiment",
     longDescription: "A sentiment analysis dashboard that aggregates social media, news, and review site data. It uses Natural Language Processing to classify public opinion and alert brand managers to potential PR crises before they escalate.",
     features: [
       "Multi-channel data aggregation",
